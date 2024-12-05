@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ananya Srivastava - Portfolio</title>
+    <style>
+      /* General Styles */
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f1f9ff;
+        color: #023047;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Header Section */
+      header {
+        background-color: #0077b6;
+        color: #ffffff;
+        padding: 40px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        text-align: left;
+      }
+
+      .profile-img {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        transform: scale(1);
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .profile-img:hover {
+        transform: scale(1.05);
+      }
+
+      .intro-text h1 {
+        font-size: 2.5em;
+        margin: 0;
+      }
+
+      .intro-text h2 {
+        font-size: 1.8em;
+        color: #ffb703;
+        margin: 10px 0;
+      }
+
+      .intro-text p {
+        font-size: 1.2em;
+        line-height: 1.6;
+      }
+
+      /* Projects Section */
+      .section {
+        padding: 40px 20px;
+        text-align: center;
+      }
+
+      .section h3 {
+        font-size: 2.2em;
+        margin-bottom: 30px;
+        color: #0077b6;
+        font-weight: bold;
+      }
+
+      .projects-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        justify-items: center;
+        padding: 20px 10px;
+      }
+
+      .project-card {
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-align: left;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        width: 90%;
+        max-width: 300px;
+      }
+
+      .project-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+
+      .project-card h4 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+        color: #0077b6;
+      }
+
+      .project-card h4 a {
+        color: inherit;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+
+      .project-card h4 a:hover {
+        color: #ffb703;
+      }
+
+      .project-card p {
+        font-size: 1em;
+        color: #014f86;
+      }
+
+      /* Contact Section */
+      .contact-info ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+      }
+
+      .contact-info ul li {
+        font-size: 1.2em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+      }
+
+      .contact-info img {
+        width: 24px;
+        height: 24px;
+      }
+
+      /* Coding Platforms Section */
+      .coding-platforms h3 {
+        font-size: 2.2em;
+        color: #0077b6;
+        margin-bottom: 30px;
+        font-weight: bold;
+      }
+
+      .coding-container {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+        padding: 20px;
+      }
+
+      .coding-card {
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        width: 200px;
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .coding-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+
+      .coding-card h4 {
+        font-size: 1.5em;
+        color: #0077b6;
+        margin-bottom: 10px;
+      }
+
+      .coding-card img {
+        width: 50px;
+        height: 50px;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .coding-card a:hover img {
+        transform: scale(1.1);
+      }
+
+      /* Footer Section */
+      .footer {
+        background-color: #0077b6;
+        color: #ffffff;
+        text-align: center;
+        padding: 10px 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img class="profile-img" src="pic2.jpg" alt="Ananya Srivastava" />
+      <br class="intro-text">
+      <div>
+<h1>Ananya Srivastava</h1>
+        <h3>Frontend Developer & Competitive Programmer</h3>
+          Hello! I’m Ananya Srivastava, a Computer Science and
+          Engineering undergraduate who transforms complex ideas into
+          beautifully designed, user-centric web applications. My passion lies
+          at the intersection of art and logic, where creativity meets
+          functionality.
+          <br>
+          Frontend Development is my canvas, where I paint
+          responsive and engaging interfaces using frameworks like React.js and
+          Next.js. Each project I craft is a blend of clean code, elegant
+          design, and user-first thinking.
+          <br>
+          Competitive Programming is my
+          playground, where I tackle algorithmic puzzles and sharpen my
+          problem-solving skills. With active participation in challenges on
+          Codeforces, CodeChef, and LeetCode, I thrive on the adrenaline of
+          coding contests and the satisfaction of elegant solutions. <br>
+          Beyond coding, I find immense joy in mentoring others, sharing knowledge, and
+          guiding peers in their technical journeys. With a relentless curiosity
+          and a knack for building scalable, intuitive solutions, I’m on a
+          mission to create technology that inspires and empowers. Let’s build
+          something amazing together!<br>
+          With a relentless curiosity and a knack for building scalable, intuitive solutions, I’m on a mission to create technology that inspires and empowers.
+        </p>
+      </div>
+        
+      </div>
+    </header>
+
+    <section class="section projects">
+      <h3>Projects</h3>
+      <div class="projects-container">
+        <div class="project-card">
+          <h4>
+            <a
+              href="https://github.com/AnanyaSrivastava1203/music-academy"
+              target="_blank"
+              >Music Academy Website</a
+            >
+          </h4>
+          <p>
+            Built using <strong>Next.js</strong> and styled with
+            <strong>Tailwind CSS</strong>. A sleek, responsive platform
+            showcasing music lessons and instructor profiles.
+          </p>
+        </div>
+        <div class="project-card">
+          <h4>
+            <a
+              href="https://github.com/AnanyaSrivastava1203/todolu"
+              target="_blank"
+              >ToDoLu</a
+            >
+          </h4>
+          <p>
+            A task management application leveraging
+            <strong>React.js</strong> for the UI and
+            <strong>Firebase</strong> for backend services like authentication
+            and database storage.
+          </p>
+        </div>
+        <div class="project-card">
+          <h4>
+            <a
+              href="https://github.com/AnanyaSrivastava1203/EduMinds"
+              target="_blank"
+              >EduMinds</a
+            >
+          </h4>
+          <p>
+            A dynamic education platform designed with
+            <strong>HTML, CSS, and JavaScript</strong> to improve online
+            learning accessibility.
+          </p>
+        </div>
+        <div class="project-card">
+          <h4>
+            <a
+              href="https://github.com/AnanyaSrivastava1203/Library-Management-System"
+              target="_blank"
+              >Library Management System</a
+            >
+          </h4>
+          <p>
+            Implements CRUD operations with seamless <strong>MySQL</strong>
+            database integration.
+          </p>
+        </div>
+        <div class="project-card">
+          <h4>
+            <a
+              href="https://github.com/AnanyaSrivastava1203/book_my_show_clone"
+              target="_blank"
+              >Book My Show Clone</a
+            >
+          </h4>
+          <p>
+            A frontend clone featuring interactive UI components designed in
+            <strong>React.js</strong>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section coding-platforms">
+      <h3>Know me Technically</h3>
+      <div class="coding-container">
+        <div class="coding-card">
+          <h4>CodeChef</h4>
+          <a href="https://www.codechef.com/users/itzzmee" target="_blank">
+            <img src="CodeChef.jpeg" alt="CodeChef" />
+          </a>
+        </div>
+        <div class="coding-card">
+          <h4>Codeforces</h4>
+          <a href="https://codeforces.com/profile/itzzmee" target="_blank">
+            <img src="cf.png" alt="Codeforces" />
+          </a>
+        </div>
+        <div class="coding-card">
+          <h4>LeetCode</h4>
+          <a href="https://leetcode.com/u/itzzmee/" target="_blank">
+            <img src="leetcode.png" alt="LeetCode" />
+          </a>
+        </div>
+        <div class="coding-card">
+          <h4>GitHub</h4>
+          <a href="https://github.com/AnanyaSrivastava1203" target="_blank">
+            <img src="github.png" alt="GitHub" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-info">
+      <h3>Connect With Me !!</h3>
+      <ul>
+        <li>
+          <img src="gmail.png" alt="Gmail Icon" />
+          <a href="mailto:sriananya1203@gmail.com">sriananya1203@gmail.com</a>
+        </li>
+        <li>
+          <img src="github.png" alt="GitHub" />
+          <a href="https://github.com/AnanyaSrivastava1203" target="_blank"
+            >GitHub</a
+          >
+        </li>
+        <li>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"
+            alt="LinkedIn Icon"
+          />
+          <a
+            href="https://www.linkedin.com/in/ananyasrivastava20040912/"
+            target="_blank"
+            >LinkedIn</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; 2024 Ananya Srivastava. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
